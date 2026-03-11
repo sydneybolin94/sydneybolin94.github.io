@@ -99,3 +99,23 @@
                 border-color 0.3s ease-in;
   }
 }
+
+.image-scroll-container {
+  position: relative;
+  aspect-ratio: 16 / 9; /* Keeps the container 16:9 */
+  overflow: hidden;
+  border-radius: 8px; /* optional */
+}
+
+.image-scroll-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 10s ease; /* smooth scroll */
+  transform: translateY(0);
+}
+
+/* Scroll the image upward on hover */
+.image-scroll-container:hover img {
+  transform: translateY(-71%); /* adjust depending on image height */
+}

@@ -2,28 +2,112 @@
   <h1> Featured Projects </h1>
 </div>
 <div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+  <div class="images-left">
+    <img alt="modular-page-builder-screenshot" src="{{ " /assets/img/mpb.png" | prepend: site.baseurl }}" />
   </div>
-  <div class="contents">
-    <h3> Project Title </h3>
+  <div class="contents-right">
+    <h3> Modular Page Builder - React/Tailwind </h3>
     <ul>
-      <li> Featured Skills</li>
+      <li> Recursive component rendering</li>
+      <li> JSON schema validation and guardrails</li>
+      <li> Theme system architecture (React + Tailwind)</li>
+      <li> Live preview with real-time state updates</li>
+      <li> UX design for clarity and safe editing</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>This project is a fully modular page builder that lets users visually assemble layouts by editing JSON directly
+      in an embedded code editor. The renderer reads the JSON recursively and maps each block to a real React/Tailwind
+      component, updating the preview instantly as users type. A custom schema validation layer provides guardrails that
+      prevent invalid structures and guide users toward safe, predictable edits. The theme system allows layouts to
+      adapt to different visual styles without changing component logic.</p>
+    <a class="project-link" target="_blank" href="https://sydneybolin94.github.io/modular-page-builder/">Check it
+      out</a>
+  </div>
+</div>
+<div class="user-projects">
+  
+  <div class="contents">
+    <h3> SpendSmart - .NET CRUD Expense Tracker </h3>
+    <ul>
+      <li> ASP.NET MVC routing and controller patterns</li>
+      <li> Entity Framework Core data modeling</li>
+      <li> SQL Server integration</li>
+      <li> CRUD operations and server-side validation</li>
+      <li> MVC architecture fundamentals</li>
+    </ul>
+    <p>This is a small ASP.NET MVC web app that demonstrates the full CRUD pattern by letting users add, edit, delete,
+      and view expenses stored in a SQL Server database. It uses Entity Framework Core for data modeling and
+      persistence, with clean controller actions and simple server-side validation. The project follows standard MVC
+      architecture, making the flow from model to view easy to understand and extend. While intentionally minimal, it
+      shows backend comfort and the ability to build and ship a functional .NET application end-to-end.</p>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+    <img alt="Western Nebraska Tourism Coalition Website Screenshot" src="{{ " /assets/img/west-nebraska.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3> Western Nebraska Website - WordPress Custom Theme + Plugin</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li> Custom WordPress theme development (PHP templates, Advanced Custom Fields, header/footer/homepage)</li>
+      <li> Custom plugin architecture with taxonomies and relational data</li>
+      <li> Structured content entry using ACF and WordPress admin tools</li>
+      <li> Front-end component development for dynamic listings</li>
+      <li> Interactive UI patterns (scroll-aware header behavior)</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>This project involved building a custom WordPress theme and companion plugin for a nonprofit promoting travel
+      across Western Nebraska. I developed the site's header, homepage, and footer, including a scroll-aware header that
+      shifts color as users move down the page. The custom plugin powers a full directory of attractions, lodging, and
+      regional areas using multiple taxonomies and ACF fields to structure content entry for nonprofit staff. Each
+      business or attraction can be assigned to categories like Family Fun, Scenic Byways, or History & Culture, and the
+      front end automatically displays listings in the correct sections. I also built the listing layouts as reusable
+      components, even before I had the vocabulary for “shared components,” and they still hold up structurally today.
+    </p>
+    <a class="project-link" target="_blank" href="https://westnebraska.com/">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="Interactive Banking Demo Screenshot" src="{{ " /assets/img/ch21.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-left">
+    <h3> Banking Demo — UI Contribution for Enterprise Product </h3>
+    <ul>
+      <li> Component-driven front-end development</li>
+      <li> Mobile-first interface implementation</li>
+      <li> Design fidelity and pixel-accurate execution</li>
+      <li> Collaboration within a product engineering team</li>
+      <li> Professional UI polish for financial workflows</li>
+    </ul>
+    <p>This is a mobile-only banking interface demo I helped build as part of a product engineering team. The demo
+      showcases a clean, modern financial dashboard with interactive flows that users can click through on the company
+      website. I implemented mobile UI components inside a proprietary internal framework, ensuring spacing, typography,
+      and interactions matched the product team's specifications with high design fidelity. While the code isn't public,
+      the demo reflects the level of polish and consistency required in enterprise financial products. It serves as a
+      visual example of the professional, production-quality UI work I've contributed to in a team setting.</p>
+    <a class="project-link" target="_blank" href="https://sydneybolin94.github.io/modular-page-builder/">Check it
+      out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="18th Avenue Candles Website Screenshot" src="{{ " /assets/img/18th-ave-candles.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> 18th Avenue Candles - WordPress Custom Theme + Plugins</h3>
+    <ul>
+      <li> Custom WordPress development with Divi and PHP</li>
+      <li> Brand-driven UI/UX design</li>
+      <li> Custom plugin development for business logic</li>
+      <li> E-commerce layout and content architecture</li>
+      <li> Responsive, accessible front-end implementation</li>
+    </ul>
+    <p>This is the full website for my candle company, designed and built from scratch to reflect a clean, intentional,
+      Midwest-practical brand. I used Divi as the base theme and extended it with custom plugins to handle
+      business-specific functionality and structured content. The site blends product storytelling, clear navigation,
+      and a calm visual style that supports the brand's focus on clean ingredients and thoughtful craftsmanship. Every
+      page was designed to feel warm, trustworthy, and easy to shop, with responsive layouts and accessible patterns
+      throughout. This project shows my ability to design, build, and maintain a complete digital experience end-to-end.
+    </p>
+    <a class="project-link" target="_blank" href="https://18thavecandles.com/">Check it out</a>
   </div>
 </div>

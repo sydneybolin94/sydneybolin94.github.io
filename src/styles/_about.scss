@@ -31,3 +31,82 @@
   text-align: center;
   margin: 5px auto;
 }
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow sits below the tooltip box */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.flex-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flex-horizontal { 
+  flex-direction: row;
+}
+
+.flex-vertical {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.tech {
+  width:33%;
+}
+
+i {
+  font-size: 40px;
+  @media only screen and (min-width: $cut) {
+    font-size: 50px;
+  }
+}
